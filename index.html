@@ -1,130 +1,100 @@
+
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Uma homenagem a Machado de Assis, escritor negro que marcou a literatura brasileira.">
-  <title>Machado de Assis | Consciência Negra</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
-  <script src="script.js" defer></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consciência Negra - Machado de Assis</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header class="topo" id="inicio">
-    <a class="logo" href="#inicio">VOZES <span>NEGRAS</span></a>
-    <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu" aria-expanded="false">☰</button>
-    <nav class="menu" id="menu">
-      <a href="#biografia">Biografia</a>
-      <a href="#galeria">Galeria</a>
-      <a href="#linha-do-tempo">Linha do tempo</a>
-      <a href="#curiosidades">Curiosidades</a>
+
+    <header>
+        <h1>Consciência Negra</h1>
+        <p>Homenagem a Machado de Assis</p>
+        <button onclick="mudarTema()">Mudar tema</button>
+    </header>
+
+    <nav>
+        <a href="#biografia">Biografia</a>
+        <a href="#historia">História</a>
+        <a href="#curiosidades">Curiosidades</a>
+        <a href="#galeria">Galeria</a>
     </nav>
-    <button class="tema" id="themeToggle" aria-label="Ativar modo escuro">◐</button>
-  </header>
 
-  <main>
-    <section class="hero">
-      <div class="hero-texto">
-        <p class="sobretitulo">MÊS DA CONSCIÊNCIA NEGRA · 20 DE NOVEMBRO</p>
-        <h1>Machado<br>de <em>Assis</em></h1>
-        <p class="resumo">Uma das maiores vozes da literatura brasileira. Um homem negro que transformou a escrita e deixou uma obra que atravessa gerações.</p>
-        <a class="botao" href="#biografia">Conheça sua história <span>↓</span></a>
-      </div>
-      <div class="hero-foto">
-        <div class="foto-moldura">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/6/67/Machado_de_Assis_aos_57_anos_%28cropped%29.jpg"
-               alt="Retrato histórico de Machado de Assis, escritor brasileiro, com óculos e barba."
-               onerror="this.src='images/machado-ilustracao.svg'">
-        </div>
-        <span class="foto-legenda">Joaquim Maria Machado de Assis · 1839–1908</span>
-      </div>
-      <div class="hero-numero" aria-hidden="true">1839<br>—<br>1908</div>
-    </section>
+    <main>
+        <section id="biografia">
+            <h2>Quem foi Machado de Assis?</h2>
 
-    <section class="faixa">
-      <span>Literatura</span><i>✳</i><span>Resistência</span><i>✳</i><span>História</span><i>✳</i><span>Legado</span>
-    </section>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/7/7e/Machado_de_Assis_by_Marc_Ferrez.jpg"
+                 alt="Retrato de Machado de Assis">
 
-    <section class="secao biografia" id="biografia">
-      <div class="secao-titulo">
-        <p class="sobretitulo">01 / SUA TRAJETÓRIA</p>
-        <h2>Uma vida que<br> virou <em>história.</em></h2>
-      </div>
-      <article class="texto-biografia">
-        <p>Joaquim Maria Machado de Assis nasceu em 21 de junho de 1839, no Morro do Livramento, no Rio de Janeiro. Filho de Francisco José de Assis e Maria Leopoldina Machado de Assis, cresceu em uma família humilde. Perdeu a mãe ainda criança e teve poucas oportunidades de frequentar a escola. Mesmo assim, desenvolveu grande interesse pelos livros e pelo conhecimento, estudando por conta própria.</p>
-        <p>Na adolescência, começou a trabalhar e se aproximou do mundo da escrita. Foi aprendiz de tipógrafo, revisor e colaborador de jornais. Publicou poemas, críticas, contos e crônicas, construindo aos poucos uma carreira reconhecida. Em 1869, casou-se com Carolina Augusta Xavier de Novais, que foi sua companheira por muitos anos.</p>
-        <p>Machado escreveu romances, contos, peças de teatro, poemas e crônicas. Entre suas obras mais conhecidas estão <strong>Memórias Póstumas de Brás Cubas</strong>, <strong>Quincas Borba</strong> e <strong>Dom Casmurro</strong>. Sua escrita ficou conhecida pela ironia, pela análise psicológica dos personagens e pelas críticas aos costumes e às desigualdades da sociedade.</p>
-        <p>Em 1897, tornou-se o primeiro presidente da Academia Brasileira de Letras, instituição da qual foi um dos fundadores. Machado de Assis morreu em 29 de setembro de 1908, no Rio de Janeiro. Seu legado permanece vivo: sua obra é estudada no Brasil e em vários países, e sua trajetória representa a força da inteligência, da cultura e da produção negra brasileira.</p>
-      </article>
-    </section>
+            <p>
+                Machado de Assis nasceu em 21 de junho de 1839,
+                no Rio de Janeiro. Foi um dos maiores escritores
+                da literatura brasileira.
+            </p>
 
-    <section class="secao galeria" id="galeria">
-      <div class="secao-titulo">
-        <p class="sobretitulo">02 / REGISTROS</p>
-        <h2>Galeria de <em>memórias.</em></h2>
-        <p class="apoio">Imagens que ajudam a preservar a memória de um dos grandes nomes da nossa cultura.</p>
-      </div>
-      <div class="grade-galeria">
-        <figure class="imagem-grande">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/6/67/Machado_de_Assis_aos_57_anos_%28cropped%29.jpg"
-               alt="Fotografia em preto e branco de Machado de Assis aos 57 anos."
-               onerror="this.src='images/machado-ilustracao.svg'">
-          <figcaption>Machado de Assis, por volta de 1896.</figcaption>
-        </figure>
-        <figure>
-          <img src="https://cdna.artstation.com/p/assets/images/images/058/589/808/large/di-cardoso-di-machado-de-assis.jpg?1674517542" alt="Ilustração artística inspirada no retrato de Machado de Assis.">
-          <figcaption>Uma homenagem à sua imagem e memória.</figcaption>
-        </figure>
-        <figure>
-          <img src="https://imgs.search.brave.com/W_8xlJoG88Rwu-0menKNhYARynnLeVolUk3XMfAxHJk/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tLm1l/ZGlhLWFtYXpvbi5j/b20vaW1hZ2VzL0kv/NDFadFBKNWhteEwu/anBn" alt="Ilustração de livros que representam a obra literária de Machado de Assis.">
-          <figcaption>Uma obra que continua sendo lida.</figcaption>
-        </figure>
-      </div>
-      <p class="credito">Fotografia histórica: Wikimedia Commons / domínio público. Ilustrações: produção própria em SVG.</p>
-    </section>
+            <p>
+                De origem humilde, enfrentou dificuldades durante
+                sua infância, mas conseguiu se destacar na literatura.
+                Escreveu romances, contos, poesias e crônicas.
+            </p>
 
-    <section class="secao linha" id="linha-do-tempo">
-      <div class="secao-titulo">
-        <p class="sobretitulo">03 / MOMENTOS IMPORTANTES</p>
-        <h2>Linha do <em>tempo.</em></h2>
-      </div>
-      <div class="timeline">
-        <article class="evento"><span>1839</span><div><h3>O começo</h3><p>Nasce Joaquim Maria Machado de Assis, no Rio de Janeiro.</p></div></article>
-        <article class="evento"><span>1856</span><div><h3>Primeiros passos</h3><p>Entra na Tipografia Nacional como aprendiz de tipógrafo e se aproxima do universo dos livros.</p></div></article>
-        <article class="evento"><span>1864</span><div><h3>Primeiro livro de poemas</h3><p>Publica <em>Crisálidas</em>, uma de suas primeiras obras em livro.</p></div></article>
-        <article class="evento"><span>1869</span><div><h3>Nova etapa pessoal</h3><p>Casa-se com Carolina Augusta Xavier de Novais.</p></div></article>
-        <article class="evento destaque"><span>1881</span><div><h3>Uma obra marcante</h3><p>Publica <em>Memórias Póstumas de Brás Cubas</em>, romance que marca uma nova fase de sua escrita.</p></div></article>
-        <article class="evento"><span>1897</span><div><h3>Academia Brasileira de Letras</h3><p>É eleito primeiro presidente da instituição e ocupa o cargo até sua morte.</p></div></article>
-        <article class="evento"><span>1908</span><div><h3>O legado permanece</h3><p>Morre no Rio de Janeiro, deixando uma obra fundamental para a literatura brasileira.</p></div></article>
-      </div>
-    </section>
+            <p>
+                Sua obra mais conhecida é Dom Casmurro.
+                Machado também foi um dos fundadores da Academia
+                Brasileira de Letras.
+            </p>
+        </section>
 
-    <section class="curiosidades" id="curiosidades">
-      <div class="secao-titulo">
-        <p class="sobretitulo">04 / ALÉM DOS LIVROS</p>
-        <h2>Você <em>sabia?</em></h2>
-      </div>
-      <div class="cards-curiosidades">
-        <article class="curio-card"><span>01</span><h3>Autodidata</h3><p>Mesmo sem ter frequentado cursos regulares por muito tempo, construiu uma formação intelectual ampla por meio da leitura e do estudo.</p></article>
-        <article class="curio-card"><span>02</span><h3>Muitos talentos</h3><p>Além de romancista, foi jornalista, poeta, cronista, crítico literário e dramaturgo.</p></article>
-        <article class="curio-card"><span>03</span><h3>Primeiro presidente</h3><p>Foi um dos fundadores da Academia Brasileira de Letras e seu primeiro presidente, eleito em 1897.</p></article>
-      </div>
-      <blockquote>“Ao vencedor, as batatas.”<cite>— Quincas Borba, Machado de Assis</cite></blockquote>
-    </section>
+        <section id="historia">
+            <h2>Linha do Tempo</h2>
 
-    <section class="mensagem">
-      <p class="sobretitulo">CONSCIÊNCIA NEGRA</p>
-      <h2>Conhecer nossa história é também reconhecer quem ajudou a construí-la.</h2>
-      <p>Machado de Assis é parte fundamental da cultura brasileira. Sua trajetória nos lembra que talento, conhecimento e criatividade podem romper barreiras e transformar gerações.</p>
-    </section>
-  </main>
+            <div class="item">
+                <h3>1839</h3>
+                <p>Nasceu no Rio de Janeiro.</p>
+            </div>
 
-  <footer>
-    <a class="logo" href="#inicio">VOZES <span>NEGRAS</span></a>
-    <p>Projeto escolar · Consciência Negra · 2026</p>
-    <a href="#inicio">Voltar ao topo ↑</a>
-  </footer>
+            <div class="item">
+                <h3>1869</h3>
+                <p>Casou-se com Carolina Augusta Xavier de Novais.</p>
+            </div>
+
+            <div class="item">
+                <h3>1897</h3>
+                <p>Foi um dos fundadores da Academia Brasileira de Letras.</p>
+            </div>
+
+            <div class="item">
+                <h3>1908</h3>
+                <p>Faleceu no Rio de Janeiro, deixando um grande legado.</p>
+            </div>
+        </section>
+
+        <section id="curiosidades">
+            <h2>Curiosidades</h2>
+
+            <p>• Era conhecido como um dos maiores escritores do Brasil.</p>
+            <p>• Foi o primeiro presidente da Academia Brasileira de Letras.</p>
+            <p>• Escreveu o famoso livro Dom Casmurro.</p>
+            <p>• Mesmo enfrentando dificuldades, conquistou reconhecimento nacional.</p>
+        </section>
+
+        <section id="galeria">
+            <h2>Galeria de Imagens</h2>
+
+            <img src="https://upload.wikimedia.org/wikipedia/commons/7/7e/Machado_de_Assis_by_Marc_Ferrez.jpg"
+                 alt="Fotografia histórica de Machado de Assis">
+        </section>
+    </main>
+
+    <footer>
+        <p>Projeto escolar - Consciência Negra</p>
+        <p>Desenvolvido por André Luiz Americo De Souza</p>
+    </footer>
+
+    <script src="script.js"></script>
+
 </body>
 </html>
